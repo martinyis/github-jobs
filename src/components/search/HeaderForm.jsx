@@ -1,10 +1,24 @@
 import { BsBriefcase } from 'react-icons/bs';
-
-const HeaderForm = () => {
+import { useState } from 'react';
+const HeaderForm = (props) => {
+  const { searchValue } = props;
+  const [title, setTitle] = useState('');
   return (
     <div className="headerForm">
-      <form action="" className="headerForm__search">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          searchValue(title);
+        }}
+        action=""
+        className="headerForm__search"
+      >
         <input
+          value={title}
+          onChange={(e) => {
+            setTitle(e.target.value);
+            searchValue(e.target.value);
+          }}
           placeholder="Title, companies, expertise or benefits"
           type="text"
           className="headerForm__input"

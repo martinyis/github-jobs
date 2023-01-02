@@ -1,4 +1,4 @@
-const jobs = [
+export const jobs = [
   {
     companyName: 'Acme Corporation',
     jobTitle: 'Software Engineer',
@@ -11,7 +11,7 @@ const jobs = [
   {
     companyName: 'Bravo Company',
     jobTitle: 'Marketing Manager',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'New York City',
     posted: 10,
     description:
@@ -38,7 +38,7 @@ const jobs = [
   {
     companyName: 'Echo Inc.',
     jobTitle: 'Human Resources Manager',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'San Francisco',
     posted: 25,
     description:
@@ -47,7 +47,7 @@ const jobs = [
   {
     companyName: 'Foxtrot Corp.',
     jobTitle: 'Financial Analyst',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Hong Kong',
     posted: 30,
     description:
@@ -74,7 +74,7 @@ const jobs = [
   {
     companyName: 'India Inc.',
     jobTitle: 'Project Manager',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Toronto',
     posted: 45,
     description:
@@ -92,7 +92,7 @@ const jobs = [
   {
     companyName: 'Kilo Corp.',
     jobTitle: 'Data Scientist',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Seattle',
     posted: 55,
     description:
@@ -119,7 +119,7 @@ const jobs = [
   {
     companyName: 'November Corp.',
     jobTitle: 'Business Analyst',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Los Angeles',
     posted: 70,
     description:
@@ -128,7 +128,7 @@ const jobs = [
   {
     companyName: 'Oscar Enterprises',
     jobTitle: 'Front-End Developer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Miami',
     posted: 75,
     description:
@@ -137,7 +137,7 @@ const jobs = [
   {
     companyName: 'Papa Inc.',
     jobTitle: 'Product Designer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Atlanta',
     posted: 80,
     description:
@@ -163,7 +163,7 @@ const jobs = [
   {
     companyName: 'Sierra Corp.',
     jobTitle: 'QA Tester',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'San Diego',
     posted: 95,
     description:
@@ -190,7 +190,7 @@ const jobs = [
   {
     companyName: 'Victor Enterprises',
     jobTitle: 'Back-End Developer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Detroit',
     posted: 110,
     description:
@@ -217,7 +217,7 @@ const jobs = [
   {
     companyName: 'Yankee Inc.',
     jobTitle: 'Mobile Developer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'St. Louis',
     posted: 125,
     description:
@@ -244,7 +244,7 @@ const jobs = [
   {
     companyName: 'Bravo Corp.',
     jobTitle: 'Cloud Engineer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Pittsburgh',
     posted: 140,
     description:
@@ -253,7 +253,7 @@ const jobs = [
   {
     companyName: 'Charlie Inc.',
     jobTitle: 'Data Engineer',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Cincinnati',
     posted: 145,
     description:
@@ -262,7 +262,7 @@ const jobs = [
   {
     companyName: 'Delta Enterprises',
     jobTitle: 'Technical Recruiter',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Kansas City',
     posted: 150,
     description:
@@ -280,7 +280,7 @@ const jobs = [
   {
     companyName: 'Foxtrot Corp.',
     jobTitle: 'Technical Account Manager',
-    option: 'Full-time',
+    option: 'Part-time',
     place: 'Indianapolis',
     posted: 160,
     description:

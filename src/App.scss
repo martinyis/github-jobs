@@ -104,3 +104,250 @@ h1 {
     width: 100px;
   }
 }
+.showsearch__container {
+  display: flex;
+  gap: 32px;
+}
+.jobType {
+  flex: 0 1 31.5%;
+}
+.jobType__location {
+  margin-top: 44px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #b9bdcf;
+}
+.jobType__select {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #444;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.jobType__title {
+  margin-top: 44px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #b9bdcf;
+}
+
+.jobType__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.jobType__enrollment-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.jobType__form label {
+  display: inline-block;
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  margin-right: 10px;
+}
+
+.jobType__form input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.jobType__enrollment {
+  margin-top: 44px;
+}
+
+.jobs {
+  margin-top: 44px;
+  flex: 0 1 65.8%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.job__image-img {
+  width: 90px;
+  height: 90px;
+}
+
+.job {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.job__picture {
+  padding: 12px 16px 12px 12px;
+}
+.job__image {
+}
+.job__image-img {
+}
+.job__about {
+  width: 100%;
+  padding-right: 12px;
+}
+.job__company {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+.job__title {
+  margin-top: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #334680;
+}
+.job__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+.job__enrollment {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+  border: 1px solid #334680;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 26px;
+}
+.job__add-info {
+  display: flex;
+  gap: 28.5px;
+}
+.job__place {
+  display: flex;
+  gap: 7.5px;
+}
+.job__city,
+.job__days {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #b9bdcf;
+  margin: 0;
+}
+.job__time {
+  display: flex;
+  gap: 7.5px;
+}
+
+@media (max-width: 748px) {
+  .job__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding-bottom: 14px;
+  }
+}
+@media (max-width: 472px) {
+  .job__company {
+    font-size: 10px;
+  }
+  .job__title {
+    font-size: 14px;
+  }
+  .job__enrollment {
+    font-size: 10px;
+  }
+  .job__city {
+    font-size: 10px;
+  }
+  .job__days {
+    font-size: 10px;
+  }
+  .job__add-info {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 748px) {
+  .showsearch__container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.paginationButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.paginationButtons li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #b7bcce;
+  border-radius: 4px;
+}
+.paginationButtons li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #b9bdcf;
+}
+.paginationActive {
+  width: 36px;
+  height: 36px;
+  background: #1e86ff;
+  border: 1px solid #1e86ff;
+  border-radius: 4px;
+}
+
+.jobType__button {
+  margin-top: 44px;
+}
+.jobType__btn {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #1e86ff;
+  border: 1px solid #1e86ff;
+}
