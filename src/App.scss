@@ -315,25 +315,23 @@ h1 {
 
 .paginationButtons li {
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
   border: 1px solid #b7bcce;
   border-radius: 4px;
 }
 .paginationButtons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #b9bdcf;
-}
-.paginationActive {
   width: 36px;
   height: 36px;
+}
+.paginationActive {
   background: #1e86ff;
   border: 1px solid #1e86ff;
   border-radius: 4px;

@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { jobs } from '../../data/jobs-list.js';
 const JobType = (props) => {
   const { getOption } = props;
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState('All');
   const [partTime, setPartTime] = useState(false);
   const [options, setOptions] = useState([]);
   useEffect(() => {
-    setOptions([city, partTime ? 'both' : 'Full-time']);
+    setOptions([city, partTime]);
   }, [city, partTime]);
   let cities = [];
   jobs.forEach((job) => {
@@ -36,16 +36,14 @@ const JobType = (props) => {
       </div>
       <div className="jobType__enrollment">
         <h2 className="jobType__title">Enrollment Status</h2>
-        <form
-          onChange={(e) => {
-            partTime ? setPartTime(false) : setPartTime(true);
-          }}
-          className="jobType__form"
-          action=""
-        >
+        <form className="jobType__form" action="">
           <div className="jobType__enrollment-option">
             <label htmlFor="part-time">Part-time</label>
             <input
+              onChange={(e) => {
+                partTime ? setPartTime(false) : setPartTime(true);
+                console.log(partTime);
+              }}
               type="checkbox"
               id="part-time"
               name="option"
@@ -67,6 +65,7 @@ const JobType = (props) => {
         <button
           onClick={() => {
             getOption(options);
+            console.log(options);
           }}
           className="jobType__btn"
         >

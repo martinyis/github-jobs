@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 const Search = (props) => {
   const { getInfo } = props;
   const [value, setValue] = useState('');
-  const [sortOptions, setSortOption] = useState(['', '']);
+  const [sortOptions, setSortOption] = useState(['All', false]);
   const searchValue = (text) => {
     setValue(text);
   };
@@ -29,15 +29,15 @@ const Search = (props) => {
   //         return job.place.toLowerCase().includes(sortOptions[0].toLowerCase());
   //       });
   const finalFilter =
-    sortOptions[1] === 'both' && sortOptions[0] === 'All'
-      ? filteredJobs
-      : sortOptions[0] === '' && sortOptions[1] === ''
+    sortOptions[1] === false && sortOptions[0] === 'All'
+      ? filteredJobs.filter((job) => job.option === 'Full-time')
+      : sortOptions[1] === true && sortOptions[0] === 'All'
       ? filteredJobs
       : filteredJobs.filter((job) =>
-          sortOptions[1] === 'both'
+          sortOptions[1] === true
             ? job.place.toLowerCase().includes(sortOptions[0].toLowerCase())
             : job.place.toLowerCase().includes(sortOptions[0].toLowerCase()) &&
-              job.option === sortOptions[1]
+              job.option === true
         );
   return (
     <div className="search">
