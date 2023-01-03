@@ -9,20 +9,11 @@ import {
 } from 'react-icons/md';
 import { useEffect } from 'react';
 const Jobs = (props) => {
-  const { filteredJobs, finalFilter } = props;
+  const { filteredJobs, finalFilter, getInfo, value } = props;
   const [jobsData, setJobsData] = useState(jobs.slice(0, 35));
-  const [submited, setSumbited] = useState(false);
   useEffect(() => {
-    setJobsData(filteredJobs);
-  }, [filteredJobs]);
-
-  useEffect(() => {
-    setSumbited(true);
-    if (submited) {
-      setJobsData(finalFilter);
-    }
+    setJobsData(finalFilter);
   }, [finalFilter]);
-
   const [pageNumber, setPageNumber] = useState(0);
   const jobsPerPage = 5;
   const pagesVisited = pageNumber * jobsPerPage;
@@ -30,7 +21,7 @@ const Jobs = (props) => {
     .slice(pagesVisited, pagesVisited + jobsPerPage)
     .map((job) => {
       const id = uuid4();
-      return <Job key={id} {...job} />;
+      return <Job getInfo={getInfo} key={id} {...job} />;
     });
   const pageCount = Math.ceil(jobsData.length / jobsPerPage);
   const changePage = ({ selected }) => {

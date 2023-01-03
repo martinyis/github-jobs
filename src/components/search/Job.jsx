@@ -1,9 +1,14 @@
 import { GiEarthAmerica } from 'react-icons/gi';
 import { BiTimeFive } from 'react-icons/bi';
 const Job = (props) => {
-  const { companyName, jobTitle, option, place, posted } = props;
+  const { companyName, jobTitle, option, place, posted, getInfo } = props;
   return (
-    <div className="job">
+    <div
+      onClick={() => {
+        getInfo(props);
+      }}
+      className="job"
+    >
       <div className="job__picture">
         <div className="job__image">
           <img

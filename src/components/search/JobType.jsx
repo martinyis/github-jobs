@@ -70,7 +70,7 @@ const JobType = (props) => {
           }}
           className="jobType__btn"
         >
-          Sumbit
+          Submit
         </button>
       </div>
     </div>
