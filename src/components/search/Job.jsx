@@ -1,5 +1,6 @@
 import { GiEarthAmerica } from 'react-icons/gi';
 import { BiTimeFive } from 'react-icons/bi';
+import jobImage from '../../images/not-found.png';
 const Job = (props) => {
   const { companyName, jobTitle, option, place, posted, getInfo } = props;
   return (
@@ -11,11 +12,7 @@ const Job = (props) => {
     >
       <div className="job__picture">
         <div className="job__image">
-          <img
-            className="job__image-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
-            alt=""
-          />
+          <img className="job__image-img" src={jobImage} alt="" />
         </div>
       </div>
       <div className="job__about">
