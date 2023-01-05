@@ -309,6 +309,8 @@ h1 {
 }
 
 .paginationButtons {
+  padding: 0;
+  margin-left: auto;
   display: flex;
   gap: 12px;
 }
@@ -335,6 +337,13 @@ h1 {
   background: #1e86ff;
   border: 1px solid #1e86ff;
   border-radius: 4px;
+}
+
+@media (max-width: 426px) {
+  .paginationButtons li a {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .jobType__button {

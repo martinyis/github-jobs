@@ -1,6 +1,7 @@
 import Apply from './Apply';
 import { GiEarthAmerica } from 'react-icons/gi';
 import { BiTimeFive } from 'react-icons/bi';
+import jobImg from '../../images/not-found.png';
 const Result = (props) => {
   const { companyName, jobTitle, option, place, posted, goBack, description } =
     props;
@@ -21,10 +22,7 @@ const Result = (props) => {
             </div>
             <div className="overview__company">
               <div className="overview__picture">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
-                  alt=""
-                />
+                <img src={jobImg} alt="" />
               </div>
               <div className="overview__company-info">
                 <p className="overview__company-name">{companyName}</p>

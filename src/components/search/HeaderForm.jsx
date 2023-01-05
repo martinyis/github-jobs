@@ -19,7 +19,7 @@ const HeaderForm = (props) => {
             setTitle(e.target.value);
             searchValue(e.target.value);
           }}
-          placeholder="Title, companies, expertise or benefits"
+          placeholder="Titles"
           type="text"
           className="headerForm__input"
         />
